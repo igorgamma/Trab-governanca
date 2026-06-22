@@ -1,4 +1,4 @@
-#Trab-governança
+# Trab-governança
 
 Neste trabalho, o foco seria justamente a análise da diferença no output de IAs generativas para situações com e sem governança. Neste estudo, foram utilizadas duas IAs diferentes: ChatGPT e Claude. O Claude foi utilizado para fins de organização do fluxo de trabalho, bem como a criação do código inicial com as vulnerabilidades a serem observadas. O fim era evitar qualquer tipo de viés, caso ambos os códigos gerados com e sem vulnerabilidades e posteriormente analisados fossem provenientes de uma mesma IA generativa (ex: GPT poderia apresentar vícios que poderiam ser facilmente detectados por si mesmo em teste posterior, o que poderia anular a credibilidade do estudo em questão).
 
