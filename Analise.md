@@ -28,5 +28,5 @@ Como as regras foram em algum grau guiadas também pelas vulnerabilidades que fo
 Como a IA pode acabar interpretando as coisas de forma um pouco mais "livre", isso pode (ou não) acarretar em um nível de heterogeneidade nos resultados. Por isso, acaba sendo de suma importância que haja a auditoria, de forma independente e constante, feita por e para seres humanos, de forma a garantir sempre a rastreabilidade, conformidade, transparência e legitimidade dos dados apresentados.<br>
 
 Disclaimers:<br>
-Análise crítica feita inteiramente por mim, sem assistência alguma.<br>
+Análise crítica feita inteiramente por mim, sem assistência direta, apenas para fins de ortografia, pois estou sem acentos no teclado.<br>
 Foram utilizadas ferramentas de IA para elaboração do cenário (1), contexto (1), código com falhas (3) e regras de governança (2), todas com a devida revisão e supervisão humana.
