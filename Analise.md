@@ -4,12 +4,12 @@ Neste trabalho, o foco seria justamente a análise da diferença no output de IA
 
 No trabalho de governança, foram utilizados primariamente dois cenários como guia:
 
-  Cenário A - com governança (ChatGPT):
+  Cenário A - com governança (ChatGPT):<br>
     -No cenário A, foi dado ao ChatGPT o código gerado pelo Claude, com as vulnerabilidades de código. Juntamente, foi inserido um texto com recomendações/regras de governança, que serviriam de diretrizes para a análise utilizada pela IA generativa. Desse modo, o     intuito inicial era justamente compreender quais regras seriam (e se seriam realmente) seguidas, com o rigor necessário.<br>
     -Foi notado que, durante o cenário A, houve não apenas o respeito às diretrizes impostas (como, por exemplo, de não fazer algo caso não possa ser documentável, ex: alterar valores de constantes ambientais sem uma referência clara antes), mas também a criação      de novos artefatos que pudessem ser utilizados para tais fins.<br>
     -Também houve uma clareza notória da IA generativa no tom descritivo das mudanças, bem como as diretrizes que antes estavam sendo violadas, para referência e documentação futuras.
 
-  Cenário B - sem governança (ChatGPT):
+  Cenário B - sem governança (ChatGPT):<br>
     -De forma análoga ao cenário A, foi dado o mesmo código gerado pelo Claude, mas, ao invés de ter um guia de regras/diretrizes a serem seguidas, foi dada uma certa liberdade para a IA no que tangente à forma como as vulnerabilidades devem ser geridas.<br>
     -Como esperado, durante o cenário B, ainda que a IA respeitasse boas práticas de programação até certo nível, não houve uma clareza na parte de documentação/explicação nas mudanças ocorridas. No contexto da GreenOps, esse tipo de erro seria considerado            crítico, já que uma empresa amplamente afetada por regulamentações ambientais e de segurança poderia facilmente ser alvo de investigações ao não adotar certas diretrizes legais/técnicas e rigor durante o decorrer de seus processos.<br>
     -Foram notadas algumas sugestões da IA, que poderiam também ser utilizadas/adotadas arbitrariamente por programadores, sem qualquer cuidado ou documentação, o que poderia ou não ocorrer por parte dos mesmos.<br>
