@@ -4,18 +4,18 @@ Neste trabalho, o foco seria justamente a análise da diferença no output de IA
 
 No trabalho de governança, foram utilizados primariamente dois cenários como guia:
 
-Cenário A - com governança (ChatGPT):
-No cenário A, foi dado ao ChatGPT o código gerado pelo Claude, com as vulnerabilidades de código. Juntamente, foi inserido um texto com recomendações/regras de governança, que serviriam de diretrizes para a análise utilizada pela IA generativa. Desse modo, o intuito inicial era justamente compreender quais regras seriam (e se seriam realmente) seguidas, com o rigor necessário.
-Foi notado que, durante o cenário A, houve não apenas o respeito às diretrizes impostas (como, por exemplo, de não fazer algo caso não possa ser documentável, ex: alterar valores de constantes ambientais sem uma referência clara antes), mas também a criação de novos artefatos que pudessem ser utilizados para tais fins.
-Também houve uma clareza notória da IA generativa no tom descritivo das mudanças, bem como as diretrizes que antes estavam sendo violadas, para referência e documentação futuras.
+  Cenário A - com governança (ChatGPT):
+    No cenário A, foi dado ao ChatGPT o código gerado pelo Claude, com as vulnerabilidades de código. Juntamente, foi inserido um texto com recomendações/regras de governança, que serviriam de diretrizes para a análise utilizada pela IA generativa. Desse modo, o     intuito inicial era justamente compreender quais regras seriam (e se seriam realmente) seguidas, com o rigor necessário.<br>
+    Foi notado que, durante o cenário A, houve não apenas o respeito às diretrizes impostas (como, por exemplo, de não fazer algo caso não possa ser documentável, ex: alterar valores de constantes ambientais sem uma referência clara antes), mas também a criação      de novos artefatos que pudessem ser utilizados para tais fins.<br>
+    Também houve uma clareza notória da IA generativa no tom descritivo das mudanças, bem como as diretrizes que antes estavam sendo violadas, para referência e documentação futuras.
 
-Cenário B - sem governança (ChatGPT):
-De forma análoga ao cenário A, foi dado o mesmo código gerado pelo Claude, mas, ao invés de ter um guia de regras/diretrizes a serem seguidas, foi dada uma certa liberdade para a IA no que tangente à forma como as vulnerabilidades devem ser geridas.
-Como esperado, durante o cenário B, ainda que a IA respeitasse boas práticas de programação até certo nível, não houve uma clareza na parte de documentação/explicação nas mudanças ocorridas. No contexto da GreenOps, esse tipo de erro seria considerado crítico, já que uma empresa amplamente afetada por regulamentações ambientais e de segurança poderia facilmente ser alvo de investigações ao não adotar certas diretrizes legais/técnicas e rigor durante o decorrer de seus processos.
-Foram notadas algumas sugestões da IA, que poderiam também ser utilizadas/adotadas arbitrariamente por programadores, sem qualquer cuidado ou documentação, o que poderia ou não ocorrer por parte dos mesmos.
-Foi feito um teste extra, para fins de curiosidade, com o mesmo prompt utilizado. Como esperado, a forma que a IA lidou com o código foi completamente diferente da inicial (que está documentada), e isso poderia gerar inconsistências no próprio código. Houve um ponto em comum entre ambos, que foi justamente a falta de rigor durante a parte de documentação para usos futuros.
+  Cenário B - sem governança (ChatGPT):
+    De forma análoga ao cenário A, foi dado o mesmo código gerado pelo Claude, mas, ao invés de ter um guia de regras/diretrizes a serem seguidas, foi dada uma certa liberdade para a IA no que tangente à forma como as vulnerabilidades devem ser geridas.<br>
+    Como esperado, durante o cenário B, ainda que a IA respeitasse boas práticas de programação até certo nível, não houve uma clareza na parte de documentação/explicação nas mudanças ocorridas. No contexto da GreenOps, esse tipo de erro seria considerado            crítico, já que uma empresa amplamente afetada por regulamentações ambientais e de segurança poderia facilmente ser alvo de investigações ao não adotar certas diretrizes legais/técnicas e rigor durante o decorrer de seus processos.<br>
+    Foram notadas algumas sugestões da IA, que poderiam também ser utilizadas/adotadas arbitrariamente por programadores, sem qualquer cuidado ou documentação, o que poderia ou não ocorrer por parte dos mesmos.<br>
+    Foi feito um teste extra, para fins de curiosidade, com o mesmo prompt utilizado. Como esperado, a forma que a IA lidou com o código foi completamente diferente da inicial (que está documentada), e isso poderia gerar inconsistências no próprio código. Houve      um ponto em comum entre ambos, que foi justamente a falta de rigor durante a parte de documentação para usos futuros.<br>
+
 Em seguida, as perguntas a serem respondidas no tangente ao item 4 do trabalho, para fins de auditoria:
-
 1.A IA seguiu as regras de governança quando devidamente instruída? Onde falhou ou foi imprecisa?
 De forma surpreendente, as regras foram seguidas com rigor. Foi dado inclusive a sugestão de criação de uma nova função que alinhasse o projeto às conformidades previstas nas diretrizes de governança. As falhas vieram majoritariamente do cenário B: ocultação/omissão de certos processos que poderiam resultar em medidas legais cabíveis (como a falta de testes dos sensores, que por si só já gerariam irregularidades), sugestões que poderiam ou não ser seguidas, imprecisão na hora de detalhar o que foi feito etc.
 2.Quais riscos concretos surgiram no Cenário B? Como eles se relacionam com a vulnerabilidade escolhida?
